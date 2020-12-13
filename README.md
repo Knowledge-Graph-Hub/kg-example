@@ -1,6 +1,6 @@
 DTM-Template
 ================================================
-KG hub tool to generate knowledge graphs for projects
+KG hub template fro tools to generate knowledge graphs for projects
 
 Documentation
 ------------------------------------------------
@@ -19,3 +19,5 @@ The code for these are found in the [utils](project_name/utils) folder.
 
 - NLP using [OGER](https://github.com/OntoGene/OGER)
 - [ROBOT](https://github.com/ontodev/robot) for transforming ontology.OWL to ontology.JSON
+
+
