@@ -1,6 +1,6 @@
 DTM-Template
 ================================================
-KG hub to produce a knowledge graph for projects
+KG hub tool to generate knowledge graphs for projects
 
 Documentation
 ------------------------------------------------
