@@ -28,4 +28,4 @@ The code for these are found in the [utils](project_name/utils) folder.
 
 **Implementation**
 
-[Use this template](https://github.com/Knowledge-Graph-Hub/kg-dtm-template/generate) to generate a template in the desired repository and then refactor the strng `project_name` in the project to the desired project. 
+[Use this template](https://github.com/Knowledge-Graph-Hub/kg-dtm-template/generate) to generate a template in the desired repository and then refactor the string `project_name` in the project to the desired project name.  
