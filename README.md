@@ -11,7 +11,7 @@ This template could be used for data ingestion for varied sources. The name stan
 
 - Download: The [download.yaml](download.yaml) contains all the URLs for the source data.
 - Transform: The [transform_utils](project_name/transform_utils) contains the code relevant to trnsformations of the raw data into nodes and edges (tsv format)
-- Merge: Implementation of the 'merge' function from [KGX](https://github.com/biolink/kgx)
+- Merge: Implementation of the 'merge' function from [KGX](https://github.com/biolink/kgx) using [merge.yaml](merge.yaml) as a source file.
 
 **Utilities**
 
