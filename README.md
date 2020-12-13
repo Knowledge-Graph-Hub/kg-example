@@ -1,6 +1,6 @@
 Download-Transform-Merge Template
 ================================================
-KG hub template fro tools to generate knowledge graphs for projects
+KG hub template for tools to generate knowledge graphs for projects
 
 Documentation
 ------------------------------------------------
