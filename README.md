@@ -20,4 +20,8 @@ The code for these are found in the [utils](project_name/utils) folder.
 - NLP using [OGER](https://github.com/OntoGene/OGER)
 - [ROBOT](https://github.com/ontodev/robot) for transforming ontology.OWL to ontology.JSON
 
-
+**Transform Examples Included**
+- Drug Central: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/drug_central)
+- Ontology: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/ontology)
+- Traits: Sampled from [kg-microbe](https://github.com/Knowledge-Graph-Hub/kg-microbe). Code located [here](project_name/transform_utils/traits)
+- Example Transform: Boilerplate code for transforms. Code located [here](project_name/example_transform). 
