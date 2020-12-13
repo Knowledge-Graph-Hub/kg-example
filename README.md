@@ -5,7 +5,7 @@ KG hub template fro tools to generate knowledge graphs for projects
 Documentation
 ------------------------------------------------
 
-This template could be used for data ingestion for varied sources. The name stands for **D** ownload - **T** ransform - **M** erge template.
+This template could be used for data ingestion for varied sources. The name stands for <b>D</b>ownload-<b>T</b>ransform-<b>M</b>erge template.
 
 **Components**
 
