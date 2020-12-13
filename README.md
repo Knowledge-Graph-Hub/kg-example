@@ -15,5 +15,7 @@ This template could be used for data ingestion for varied sources. The name stan
 
 **Utilities**
 
+The code for these are found in the [utils](project_name/utils) folder.
+
 - NLP using [OGER](https://github.com/OntoGene/OGER)
 - [ROBOT](https://github.com/ontodev/robot) for transforming OWL to JSON
