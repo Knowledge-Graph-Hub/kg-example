@@ -1,11 +1,11 @@
-DTM-Template
+Download-Transform-Merge Template
 ================================================
-KG hub to produce a knowledge graph for projects
+KG hub template for tools to generate knowledge graphs for projects
 
 Documentation
 ------------------------------------------------
 
-This template could be used for data ingestion for varied sources. The name stands for **D** ownload - **T** ransform - **M** erge template.
+This template could be used for data ingestion for varied sources.
 
 **Components**
 
@@ -15,5 +15,17 @@ This template could be used for data ingestion for varied sources. The name stan
 
 **Utilities**
 
+The code for these are found in the [utils](project_name/utils) folder.
+
 - NLP using [OGER](https://github.com/OntoGene/OGER)
-- [ROBOT](https://github.com/ontodev/robot) for transforming OWL to JSON
+- [ROBOT](https://github.com/ontodev/robot) for transforming ontology.OWL to ontology.JSON
+
+**Transform Examples Included**
+- Drug Central: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/drug_central)
+- Ontology: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/ontology)
+- Traits: Sampled from [kg-microbe](https://github.com/Knowledge-Graph-Hub/kg-microbe). Code located [here](project_name/transform_utils/traits)
+- Example Transform: Boilerplate code for transforms. Code located [here](project_name/example_transform). 
+
+**Implementation**
+
+[Use this template](https://github.com/Knowledge-Graph-Hub/kg-dtm-template/generate) to generate a template in the desired repository and then refactor the string `project_name` in the project to the desired project name.  
