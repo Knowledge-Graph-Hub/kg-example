@@ -25,3 +25,7 @@ The code for these are found in the [utils](project_name/utils) folder.
 - Ontology: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/ontology)
 - Traits: Sampled from [kg-microbe](https://github.com/Knowledge-Graph-Hub/kg-microbe). Code located [here](project_name/transform_utils/traits)
 - Example Transform: Boilerplate code for transforms. Code located [here](project_name/example_transform). 
+
+**Implementation**
+
+[Use this template](https://github.com/Knowledge-Graph-Hub/kg-dtm-template/generate) to generate a template in the desired repository and then refactor the strng `project_name` in the project to the desired project. 
