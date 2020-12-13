@@ -20,12 +20,17 @@ The code for these are found in the [utils](project_name/utils) folder.
 - NLP using [OGER](https://github.com/OntoGene/OGER)
 - [ROBOT](https://github.com/ontodev/robot) for transforming ontology.OWL to ontology.JSON
 
-**Transform Examples Included**
+**Examples Included**
+
+Thes examples have download links and transform codes from other projects.
+
 - Drug Central: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/drug_central)
 - Ontology: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/ontology)
 - Traits: Sampled from [kg-microbe](https://github.com/Knowledge-Graph-Hub/kg-microbe). Code located [here](project_name/transform_utils/traits)
-- Example Transform: Boilerplate code for transforms. Code located [here](project_name/example_transform). 
+- Example Transform: Boilerplate code for transforms. Code located [here](project_name/example_transform).
+
+The [merge.yaml](merge.yaml) shows merging of 
 
 **Implementation**
 
-[Use this template](https://github.com/Knowledge-Graph-Hub/kg-dtm-template/generate) to generate a template in the desired repository and then refactor the string `project_name` in the project to the desired project name.  
+[Use this template](https://github.com/Knowledge-Graph-Hub/kg-dtm-template/generate) to generate a template in the desired repository and then refactor the string `project_name` in the project to the desired project name. 
