@@ -2,7 +2,7 @@ import os
 
 from typing import Optional
 
-from kg_microbe.transform_utils.transform import Transform
+from project_name.transform_utils.transform import Transform
 from kgx import PandasTransformer, ObographJsonTransformer  # type: ignore
 
 

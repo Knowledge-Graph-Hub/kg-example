@@ -14,7 +14,7 @@ configuration:
     # define the type for non-canonical properties for RDF export
 
 merged_graph:
-  name: KG-MICROBE Graph
+  name: Project-Name Graph
   source:
     bacteria-archaea-traits-ncbi:
       input:

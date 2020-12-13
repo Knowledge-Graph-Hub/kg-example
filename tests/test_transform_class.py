@@ -2,19 +2,19 @@ import os
 from unittest import TestCase
 
 from parameterized import parameterized
-from kg_microbe.transform import DATA_SOURCES
-from kg_microbe.transform_utils.transform import Transform
-from kg_microbe.transform_utils.drug_central.drug_central import DrugCentralTransform
-from kg_microbe.transform_utils.intact.intact import IntAct
-from kg_microbe.transform_utils.ontology import OntologyTransform
-from kg_microbe.transform_utils.ontology.ontology_transform import ONTOLOGIES
-from kg_microbe.transform_utils.\
+from project_name.transform import DATA_SOURCES
+from project_name.transform_utils.transform import Transform
+from project_name.transform_utils.drug_central.drug_central import DrugCentralTransform
+from project_name.transform_utils.intact.intact import IntAct
+from project_name.transform_utils.ontology import OntologyTransform
+from project_name.transform_utils.ontology.ontology_transform import ONTOLOGIES
+from project_name.transform_utils.\
     sars_cov_2_gene_annot.sars_cov_2_gene_annot import SARSCoV2GeneAnnot
-from kg_microbe.transform_utils.pharmgkb import PharmGKB
-from kg_microbe.transform_utils.scibite_cord import ScibiteCordTransform
-from kg_microbe.transform_utils.string_ppi import StringTransform
-from kg_microbe.transform_utils.ttd.ttd import TTDTransform
-from kg_microbe.transform_utils.zhou_host_proteins.zhou_transform import ZhouTransform
+from project_name.transform_utils.pharmgkb import PharmGKB
+from project_name.transform_utils.scibite_cord import ScibiteCordTransform
+from project_name.transform_utils.string_ppi import StringTransform
+from project_name.transform_utils.ttd.ttd import TTDTransform
+from project_name.transform_utils.zhou_host_proteins.zhou_transform import ZhouTransform
 
 
 class TestTransform(TestCase):

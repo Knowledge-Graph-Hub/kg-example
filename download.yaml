@@ -18,6 +18,15 @@
 #  https://bucket-name.s3.Region.amazonaws.com/key_name
 #
 ---
+
+#
+# Drug Central
+#
+-
+  # drug - target interactions from Drug Central
+  url: http://unmtid-shinyapps.net/download/drug.target.interaction.tsv.gz
+  local_name: drug.target.interaction.tsv.gz
+s
 # #
 # # Most of the data is extracted from the 'bacteria-archaea-traits' github repository
 # # link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/tree/master/output
@@ -27,20 +36,20 @@
 # - GTDB
 #   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_GTDB.csv
 -
-  url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_GTDB.csv?raw=true
-  local_name: condensed_species_GTDB.csv
+  #url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_GTDB.csv?raw=true
+  #local_name: condensed_species_GTDB.csv
 # - NCBI
 #   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_NCBI.csv
 -
-  url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_NCBI.csv?raw=true
-  local_name: condensed_species_NCBI.csv
+  #url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_NCBI.csv?raw=true
+  #local_name: condensed_species_NCBI.csv
 
 # Condensed-traits
 # - GTDB
 #   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_traits_GTDB.csv
 -
-  url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_traits_GTDB.csv?raw=true
-  local_name: condensed_traits_GTDB.csv
+  #url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_traits_GTDB.csv?raw=true
+  #local_name: condensed_traits_GTDB.csv
 # - NCBI
 #   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/tree/master/output
 -

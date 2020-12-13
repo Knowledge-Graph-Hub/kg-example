@@ -1,4 +1,4 @@
-from kg_microbe.__version__ import __version__
+from project_name.__version__ import __version__
 from validate_version_code import validate_version_code
 
 

@@ -4,10 +4,10 @@ import os
 from typing import Dict, List, Optional
 from collections import defaultdict
 
-from kg_microbe.transform_utils.transform import Transform
-from kg_microbe.utils.transform_utils import parse_header, parse_line, write_node_edge_item
-from kg_microbe.utils.nlp_utils import *
-from kg_microbe.utils.robot_utils import *
+from project_name.transform_utils.transform import Transform
+from project_name.utils.transform_utils import parse_header, parse_line, write_node_edge_item
+from project_name.utils.nlp_utils import *
+from project_name.utils.robot_utils import *
 
 """
 Ingest traits dataset (NCBI/GTDB)
