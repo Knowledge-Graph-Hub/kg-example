@@ -29,7 +29,7 @@ Thes examples have download links and transform codes from other projects.
 - Traits: Sampled from [kg-microbe](https://github.com/Knowledge-Graph-Hub/kg-microbe). Code located [here](project_name/transform_utils/traits)
 - Example Transform: Boilerplate code for transforms. Code located [here](project_name/example_transform).
 
-The [merge.yaml](merge.yaml) shows merging of 
+The [merge.yaml](merge.yaml) shows merging of the various KGs. In this example we have ENVO, CHEBI, NCBITaxon and the Traits KGs merged.
 
 **Implementation**
 
