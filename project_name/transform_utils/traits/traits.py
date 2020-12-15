@@ -6,7 +6,7 @@ from collections import defaultdict
 
 from project_name.transform_utils.transform import Transform
 from project_name.utils.transform_utils import parse_header, parse_line, write_node_edge_item
-from kg_microbe.utils import biohub_converter as bc
+from project_name.utils import biohub_converter as bc
 from project_name.utils.nlp_utils import *
 from project_name.utils.robot_utils import *
 
@@ -68,7 +68,7 @@ class TraitsTransform(Transform):
 
         """
         Create termlist.tsv files from ontology JSON files for NLP
-        TODO: Replace this code once runNER is installed and remove 'kg_microbe/utils/biohub_converter.py'
+        TODO: Replace this code once runNER is installed and remove 'project_name/utils/biohub_converter.py'
         """
         ont = 'chebi'
         ont_int = ont+'.json'
