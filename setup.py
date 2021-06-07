@@ -64,9 +64,36 @@ setup(
         'tqdm',
         'wget',
         'compress_json',
-        'click==7',
+        'click',
         'pyyaml',
-        'kgx'
+        'kgx',
+        'sphinx',
+        'sphinx_rtd_theme',
+        'recommonmark',
+        'parameterized',
+        'validate_version_code',
+        'pandas',
+        'networkx',
+        # Extra packages added
+        'six', # needed by rdflib
+        'ordered-set', #needed by kgx
+        'requests', # needed by kgx
+        'ShExJSG', # needed by linkml-runtime
+        'jsonasobj==1.2.1', #deprecated # needed by kgx
+        'prefixcommons', # needed by kgx
+        'packaging', #needed by deprecation
+        'cachetools', # needed by kgx
+        'jsonlines', # needed by kgx
+        'neo4jrestclient', # needed by kgx
+        'validators', # needed by kgx
+        'stringcase', # needed by kgx
+        'linkml_model', # needed by kgx
+        'isodate', # needed by rdflib
+        'deprecated', # needed by linkml-runtime
+        'hbreader', # needed by jsonasobj
+        'bmt', # needed by kgx
+        'jsonstreams', # needed by kgx
+        'ijson', # needed by kgx
     ],
     extras_require=extras,
 )
