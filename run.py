@@ -5,9 +5,7 @@ import os
 import click
 from project_name import download as kg_download
 from project_name import transform as kg_transform
-#from project_name.make_holdouts import make_holdouts
 from project_name.merge_utils.merge_kg import load_and_merge
-from project_name.query import run_query, parse_query_yaml, result_dict_to_tsv
 from project_name.transform import DATA_SOURCES
 
 

@@ -3,20 +3,16 @@
 import logging
 from typing import List
 
-from project_name.transform_utils.drug_central.drug_central import DrugCentralTransform
 from project_name.transform_utils.ontology import OntologyTransform
 from project_name.transform_utils.ontology.ontology_transform import ONTOLOGIES
-from project_name.transform_utils.traits.traits import TraitsTransform
 
 
 DATA_SOURCES = {
-    'DrugCentralTransform': DrugCentralTransform,
     #'GoTransform': OntologyTransform,
     #'HpTransform': OntologyTransform,
     'NCBITransform': OntologyTransform,
     'ChebiTransform': OntologyTransform,
     'EnvoTransform' : OntologyTransform,
-    'TraitsTransform': TraitsTransform
 }
 
 
