@@ -26,7 +26,7 @@
   # drug - target interactions from Drug Central
   url: http://unmtid-shinyapps.net/download/drug.target.interaction.tsv.gz
   local_name: drug.target.interaction.tsv.gz
-s
+
 # #
 # # Most of the data is extracted from the 'bacteria-archaea-traits' github repository
 # # link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/tree/master/output
