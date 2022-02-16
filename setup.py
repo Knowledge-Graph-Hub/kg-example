@@ -6,10 +6,6 @@ from setuptools import find_packages, setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-# get the long description from the relevant file
-with copen(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
-
 
 def read(*parts):
     with copen(os.path.join(here, *parts), 'r') as fp:
@@ -73,27 +69,7 @@ setup(
         'parameterized',
         'validate_version_code',
         'pandas',
-        'networkx',
-        # Extra packages added
-        'six', # needed by rdflib
-        'ordered-set', #needed by kgx
-        'requests', # needed by kgx
-        'ShExJSG', # needed by linkml-runtime
-        'jsonasobj==1.2.1', #deprecated # needed by kgx
-        'prefixcommons', # needed by kgx
-        'packaging', #needed by deprecation
-        'cachetools', # needed by kgx
-        'jsonlines', # needed by kgx
-        'neo4jrestclient', # needed by kgx
-        'validators', # needed by kgx
-        'stringcase', # needed by kgx
-        'linkml_model', # needed by kgx
-        'isodate', # needed by rdflib
-        'deprecated', # needed by linkml-runtime
-        'hbreader', # needed by jsonasobj
-        'bmt', # needed by kgx
-        'jsonstreams', # needed by kgx
-        'ijson', # needed by kgx
+        'networkx'
     ],
     extras_require=extras,
 )
