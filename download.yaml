@@ -24,34 +24,8 @@
 #
 -
   # drug - target interactions from Drug Central
-  url: http://unmtid-shinyapps.net/download/drug.target.interaction.tsv.gz
+  url: https://unmtid-shinyapps.net/download/DrugCentral/2021_09_01/drug.target.interaction.tsv.gz
   local_name: drug.target.interaction.tsv.gz
-
-# #
-# # Most of the data is extracted from the 'bacteria-archaea-traits' github repository
-# # link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/tree/master/output
-# #
-# # ******Output Data*******
-# Condensed-species
-# - GTDB
-#   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_GTDB.csv
--
-  #url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_GTDB.csv?raw=true
-  #local_name: condensed_species_GTDB.csv
-# - NCBI
-#   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_NCBI.csv
--
-  #url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_species_NCBI.csv?raw=true
-  #local_name: condensed_species_NCBI.csv
-
-# Condensed-traits
-# - GTDB
-#   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_traits_GTDB.csv
--
-  #url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_traits_GTDB.csv?raw=true
-  #local_name: condensed_traits_GTDB.csv
-# - NCBI
-#   link: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/tree/master/output
 -
   url: https://github.com/bacteria-archaea-traits/bacteria-archaea-traits/blob/master/output/condensed_traits_NCBI.csv?raw=true
   local_name: condensed_traits_NCBI.csv
