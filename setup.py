@@ -39,7 +39,7 @@ setup(
     name='project_name',
     version=__version__,
     description='KG hub for project_name',
-    long_description=long_description,
+    long_description='long_description',
     url='https://github.com/Knowledge-Graph-Hub/project_name',
     author='Harshad Hegde',
     author_email='hhegde@lbl.gov',
