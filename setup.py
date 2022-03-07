@@ -69,7 +69,8 @@ setup(
         'parameterized',
         'validate_version_code',
         'pandas',
-        'networkx'
+        'networkx',
+        'kghub-downloader'
     ],
     extras_require=extras,
 )
