@@ -1,24 +1,24 @@
 import os
-
+import gzip
+import shutil
 from typing import Optional
 
 from project_name.transform_utils.transform import Transform
+from project_name.utils.robot_utils import convert_to_json
 #from kgx import PandasTransformer, ObographJsonTransformer  # type: ignore
 from kgx.cli.cli_utils import transform
 
 
 ONTOLOGIES = {
-    #'HpTransform': 'hp.json',
-    #'GoTransform': 'go-plus.json',
-    'NCBITransform':  'ncbitaxon.json',
-    'ChebiTransform': 'chebi.json',
+    'ChebiTransform': 'chebi.owl.gz',
     'EnvoTransform': 'envo.json'
 }
 
-
 class OntologyTransform(Transform):
     """
-    OntologyTransform parses an Obograph JSON form of an Ontology into nodes nad edges.
+    OntologyTransform parses an Obograph JSON form of an Ontology into nodes and edges.
+    If it isn't in Obograph JSON format, it is transformed with ROBOT.
+    If it needs to be decompressed, that happens here too.
     """
     def __init__(self, input_dir: str = None, output_dir: str = None):
         source_name = "ontologies"
@@ -32,7 +32,7 @@ class OntologyTransform(Transform):
         Returns:
             None.
         """
-        if data_file:
+        if data_file: # if we specify a data file
             k = data_file.split('.')[0]
             data_file = os.path.join(self.input_base_dir, data_file)
             self.parse(k, data_file, k)
@@ -53,4 +53,21 @@ class OntologyTransform(Transform):
         """
         print(f"Parsing {data_file}")
         
-        transform(inputs=[data_file], input_format='obojson', output= os.path.join(self.output_dir, name), output_format='tsv')
+        # Decompress if needed
+        if data_file[-3:] == ".gz":
+            outfile = data_file[:-3]
+            with gzip.open(data_file, 'rb') as f_in:
+                with open(outfile, 'wb') as f_out:
+                    shutil.copyfileobj(f_in, f_out)
+            data_file = outfile
+
+        # Transform to obojson if needed
+        # Need to set up ROBOT first
+        if data_file[-4:] == ".owl":
+            convert_to_json("data/raw/", "chebi") # Use the downloaded ROBOT
+            data_file = data_file[:-4] + ".json"
+
+        transform(inputs=[data_file], 
+                    input_format='obojson',
+                    output= os.path.join(self.output_dir, name), 
+                    output_format='tsv')
