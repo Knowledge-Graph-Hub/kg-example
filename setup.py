@@ -70,7 +70,8 @@ setup(
         'validate_version_code',
         'pandas',
         'networkx',
-        'kghub-downloader'
+        'kghub-downloader',
+        'koza'
     ],
     extras_require=extras,
 )

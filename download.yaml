@@ -49,8 +49,6 @@
 # pre-transformed CHEBI to Pathway relationships
 #
 -
-  url: https://kg-hub.berkeleybop.io/kg-idg/20220204/transformed/reactome/chebi2reactome_edges.tsv
-  local_name: chebi2reactome_edges.tsv
--
-  url: https://kg-hub.berkeleybop.io/kg-idg/20220204/transformed/reactome/chebi2reactome_nodes.tsv
-  local_name: chebi2reactome_nodes.tsv
+  url: https://reactome.org/download/current/ChEBI2Reactome_PE_Pathway.txt
+  local_name: ChEBI2Reactome_PE_Pathway.txt
+
