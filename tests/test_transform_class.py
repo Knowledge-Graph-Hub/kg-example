@@ -4,9 +4,6 @@ from unittest import TestCase
 from parameterized import parameterized
 from project_name.transform import DATA_SOURCES
 from project_name.transform_utils.transform import Transform
-from project_name.transform_utils.ontology import OntologyTransform
-from project_name.transform_utils.ontology.ontology_transform import ONTOLOGIES
-
 
 class TestTransform(TestCase):
 
