@@ -71,7 +71,8 @@ setup(
         'pandas',
         'networkx',
         'kghub-downloader',
-        'koza'
+        'koza',
+        'biolink_model_pydantic'
     ],
     extras_require=extras,
 )
