@@ -18,7 +18,14 @@ An alternative merge option based on [cat-merge](https://github.com/monarch-init
 
 The code for these are found in the [utils](project_name/utils) folder.
 
-- [ROBOT](https://github.com/ontodev/robot) for transforming ontology.OWL to ontology.JSON
+- [ROBOT](https://github.com/ontodev/robot) for transforming ontology.OWL to ontology.JSON. Functions for working with ROBOT are in `robot_utils.py`.
+
+- Transformation utilities. The functions in `transform_utils.py` may be helpful when completing data transforms. For example, to remove obsolete nodes and the related edges from a source or even from a merged graph, use the following code, changing `project_name` and paths as needed:
+
+```
+from project_name.utils.transform_utils import remove_obsoletes
+remove_obsoletes("data/transformed/source/nodes.tsv","data/transformed/source/edges.tsv")
+```
 
 ### Examples
 
@@ -71,6 +78,10 @@ python run.py catmerge
 ```
 
 By default, this will merge all inputs in `data/transformed` and save results to `data/merged`. It also generates reports which you can find in `data/merged/qc_report.yaml` and `data/merged/qc` once the merge completes.
+
+#### Utilities
+
+
 
 #### Running in a container
 
