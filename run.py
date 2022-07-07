@@ -5,7 +5,7 @@ import os
 import click
 from project_name import download as kg_download
 from project_name import transform as kg_transform
-from project_name.merge_utils.merge_kg import load_and_merge
+from project_name.merge_utils.merge_kg import load_and_merge, merge_with_cat_merge
 from project_name.transform import DATA_SOURCES
 
 
@@ -83,6 +83,31 @@ def merge(yaml: str, processes: int) -> None:
     """
 
     load_and_merge(yaml, processes)
+
+@cli.command()
+@click.option("--merge_all",
+                is_flag=True,
+                help="""Include *all* transformed sources.""")
+@click.option("--include_only",
+                callback=lambda _,__,x: x.split(',') if x else [],
+                help="""One or more transformed sources to merge, and only these,
+                     comma-delimited and named by their directory name, e.g., reactome.""")
+@click.option("--exclude",
+                callback=lambda _,__,x: x.split(',') if x else [],
+                help="""One or more transformed sources to exclude from merging,
+                     comma-delimited and named by their directory name, e.g., reactome.
+                     Will select all other transformed sources for merging.""")
+def catmerge(merge_all=False, include_only=[], exclude=[]) -> None:
+    """Use cat-merge to create a merged graph.
+    Args:
+        merge_all: Include *all* transformed sources.
+        include_only: Include only the specified transformed sources.
+        exclude: Include all transformed sources *except* those specified.
+    Returns:
+        None.
+    """
+
+    merge_with_cat_merge(merge_all, include_only, exclude)
 
 if __name__ == "__main__":
     cli()

@@ -72,7 +72,8 @@ setup(
         'networkx',
         'kghub-downloader',
         'koza',
-        'biolink_model_pydantic'
+        'biolink_model_pydantic',
+        'cat-merge'
     ],
     extras_require=extras,
 )

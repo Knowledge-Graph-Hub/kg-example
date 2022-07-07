@@ -12,7 +12,7 @@ This template repository contains every component necessary to get started with 
 - Transform: The [transform_utils](project_name/transform_utils) contains the code relevant to trnsformations of the raw data into nodes and edges (tsv format)
 - Merge: Implementation of the 'merge' function from [KGX](https://github.com/biolink/kgx) using [merge.yaml](merge.yaml) as a source file.
 
-An alternative merge option, `cat-merge`, is also included.
+An alternative merge option based on [cat-merge](https://github.com/monarch-initiative/cat-merge) is also included. This approach may be appropriate for graphs with many different sources, though it does much less than the standard KGX-driven method to account for duplicated or similar nodes.
 
 ### Utilities
 
@@ -63,6 +63,14 @@ python run.py merge
 ```
 
 By default, this will merge all inputs defined in `merge.py` and save results to `data/merged`.
+
+Alternatively, run cat-merge:
+
+```
+python run.py catmerge
+```
+
+By default, this will merge all inputs in `data/transformed` and save results to `data/merged`. It also generates reports which you can find in `data/merged/qc_report.yaml` and `data/merged/qc` once the merge completes.
 
 #### Running in a container
 
