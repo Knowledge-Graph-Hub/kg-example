@@ -1,11 +1,11 @@
-Download-Transform-Merge Template
+KG-Hub Download-Transform-Merge Template
 ================================================
-KG-Hub template for tools to generate knowledge graphs for projects
+KG-Hub repository template for new knowledge graph projects.
 
 Documentation
 ------------------------------------------------
 
-This template could be used for data ingestion for varied sources.
+This template repository contains every component necessary to get started with building a new knowledge graph compatible with KG-Hub. It may be used for data ingestion for varied sources, transformation from various data formats to graph node/edge files, and merge functions.
 
 **Components**
 
@@ -26,7 +26,7 @@ Thes examples have download links and transform codes from other projects.
 - Ontology: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/ontology)
 - Example Transform: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/drug_central).
 
-The [merge.yaml](merge.yaml) shows merging of the various KGs. In this example we have ENVO, CHEBI, NCBITaxon and the Traits KGs merged.
+The [merge.yaml](merge.yaml) shows merging of the various graphs. In this example we have ENVO, CHEBI, and Reactome pathways.
 
 **Usage**
 
