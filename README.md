@@ -56,7 +56,6 @@ python run.py catmerge
 
 By default, this will merge all inputs in `data/transformed` and save results to `data/merged`. It also generates reports which you can find in `data/merged/qc_report.yaml` and `data/merged/qc` once the merge completes.
 
-
 #### Running in a container
 
 The Dockerfile in this directory will set up a Docker container for running the code in this repository. This may help if you experience any issues running the template in your software environment (e.g., if you're using Windows or can't update your Python version). Ensure Docker is installed, then from your own clone of this repository, run the following:
@@ -92,11 +91,10 @@ remove_obsoletes("data/transformed/source/nodes.tsv","data/transformed/source/ed
 
 ### Examples
 
-These examples have download links and transform code from other projects.
+These examples are sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19).
 
-- Ontology: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/ontology)
+- Ontology: Code located [here](project_name/transform_utils/ontology).
 
-- Example Transform: Sampled from [kg-covid-19](https://github.com/Knowledge-Graph-Hub/kg-covid-19). Code located [here](project_name/transform_utils/drug_central).
+- Example Transform: Code located [here](project_name/transform_utils/drug_central).
 
 The [merge.yaml](merge.yaml) shows merging of the various graphs. In this example we have ENVO, CHEBI, and Reactome pathways.
-
