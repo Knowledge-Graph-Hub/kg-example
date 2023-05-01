@@ -1,10 +1,12 @@
-# KG-Hub Download-Transform-Merge Template
+# KG-Hub Download-Transform-Merge Examples
 
-KG-Hub repository template for new knowledge graph projects.
+KG-Hub example project.
+
+If you're starting a new KG project, the [Cookiecutter template](https://github.com/Knowledge-Graph-Hub/kg-cookiecutter) may be easier to start with, but this repository may also be used as a template.
 
 ## Documentation
 
-This template repository contains every component necessary to get started with building a new knowledge graph compatible with KG-Hub. It may be used for data ingestion for varied sources, transformation from various data formats to graph node/edge files, and merge functions.
+This repository contains every component necessary for building a new knowledge graph compatible with KG-Hub. It may be used for data ingestion for varied sources, transformation from various data formats to graph node/edge files, and merge functions.
 
 ### Components
 
